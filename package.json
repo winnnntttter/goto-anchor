@@ -1,0 +1,46 @@
+{
+  "name": "goto-anchor",
+  "displayName": "goto anchor",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "git": "https://github.com/winnnntttter/goto-anchor"
+  },
+  "activationEvents": [
+    "onCommand:gotoAnchor.stamp1",
+    "onCommand:gotoAnchor.stamp2"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gotoAnchor.stamp1",
+        "title": "goto stamp1"
+      },
+      {
+        "command": "gotoAnchor.stamp2",
+        "title": "goto stamp2"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.41.0",
+    "eslint": "^6.6.0",
+    "glob": "^7.1.5",
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4",
+    "vscode-test": "^1.2.2"
+  }
+}
