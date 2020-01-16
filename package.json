@@ -14,7 +14,25 @@
   },
   "activationEvents": [
     "onCommand:gotoAnchor.stamp1",
-    "onCommand:gotoAnchor.stamp2"
+    "onCommand:gotoAnchor.stamp2",
+    "onCommand:gotoAnchor.stamp3",
+    "onCommand:gotoAnchor.stamp4",
+    "onCommand:gotoAnchor.stamp5",
+    "onCommand:gotoAnchor.stamp6",
+    "onCommand:gotoAnchor.stamp7",
+    "onCommand:gotoAnchor.stamp8",
+    "onCommand:gotoAnchor.stamp9",
+    "onCommand:gotoAnchor.stamp0",
+    "onCommand:gotoAnchor.go1",
+    "onCommand:gotoAnchor.go2",
+    "onCommand:gotoAnchor.go3",
+    "onCommand:gotoAnchor.go4",
+    "onCommand:gotoAnchor.go5",
+    "onCommand:gotoAnchor.go6",
+    "onCommand:gotoAnchor.go7",
+    "onCommand:gotoAnchor.go8",
+    "onCommand:gotoAnchor.go9",
+    "onCommand:gotoAnchor.go0"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -26,6 +44,200 @@
       {
         "command": "gotoAnchor.stamp2",
         "title": "goto stamp2"
+      },
+      {
+        "command": "gotoAnchor.stamp3",
+        "title": "goto stamp3"
+      },
+      {
+        "command": "gotoAnchor.stamp4",
+        "title": "goto stamp4"
+      },
+      {
+        "command": "gotoAnchor.stamp5",
+        "title": "goto stamp5"
+      },
+      {
+        "command": "gotoAnchor.stamp6",
+        "title": "goto stamp6"
+      },
+      {
+        "command": "gotoAnchor.stamp7",
+        "title": "goto stamp7"
+      },
+      {
+        "command": "gotoAnchor.stamp8",
+        "title": "goto stamp8"
+      },
+      {
+        "command": "gotoAnchor.stamp9",
+        "title": "goto stamp9"
+      },
+      {
+        "command": "gotoAnchor.stamp0",
+        "title": "goto stamp0"
+      },
+      {
+        "command": "gotoAnchor.go1",
+        "title": "goto go1"
+      },
+      {
+        "command": "gotoAnchor.go2",
+        "title": "goto go2"
+      },
+      {
+        "command": "gotoAnchor.go3",
+        "title": "goto go3"
+      },
+      {
+        "command": "gotoAnchor.go4",
+        "title": "goto go4"
+      },
+      {
+        "command": "gotoAnchor.go5",
+        "title": "goto go5"
+      },
+      {
+        "command": "gotoAnchor.go6",
+        "title": "goto go6"
+      },
+      {
+        "command": "gotoAnchor.go7",
+        "title": "goto go7"
+      },
+      {
+        "command": "gotoAnchor.go8",
+        "title": "goto go8"
+      },
+      {
+        "command": "gotoAnchor.go9",
+        "title": "goto go9"
+      },
+      {
+        "command": "gotoAnchor.go0",
+        "title": "goto go0"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gotoAnchor.stamp1",
+        "key": "ctrl+alt+shift+1",
+        "mac": "cmd+alt+shift+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp2",
+        "key": "ctrl+alt+shift+2",
+        "mac": "cmd+alt+shift+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp3",
+        "key": "ctrl+alt+shift+3",
+        "mac": "cmd+alt+shift+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp4",
+        "key": "ctrl+alt+shift+4",
+        "mac": "cmd+alt+shift+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp5",
+        "key": "ctrl+alt+shift+5",
+        "mac": "cmd+alt+shift+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp6",
+        "key": "ctrl+alt+shift+6",
+        "mac": "cmd+alt+shift+6",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp7",
+        "key": "ctrl+alt+shift+7",
+        "mac": "cmd+alt+shift+7",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp8",
+        "key": "ctrl+alt+shift+8",
+        "mac": "cmd+alt+shift+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp9",
+        "key": "ctrl+alt+shift+9",
+        "mac": "cmd+alt+shift+9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.stamp0",
+        "key": "ctrl+alt+shift+0",
+        "mac": "cmd+alt+shift+0",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go1",
+        "key": "ctrl+alt+1",
+        "mac": "cmd+alt+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go2",
+        "key": "ctrl+alt+2",
+        "mac": "cmd+alt+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go3",
+        "key": "ctrl+alt+3",
+        "mac": "cmd+alt+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go4",
+        "key": "ctrl+alt+4",
+        "mac": "cmd+alt+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go5",
+        "key": "ctrl+alt+5",
+        "mac": "cmd+alt+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go6",
+        "key": "ctrl+alt+6",
+        "mac": "cmd+alt+6",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go7",
+        "key": "ctrl+alt+7",
+        "mac": "cmd+alt+7",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go8",
+        "key": "ctrl+alt+8",
+        "mac": "cmd+alt+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go9",
+        "key": "ctrl+alt+9",
+        "mac": "cmd+alt+9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gotoAnchor.go0",
+        "key": "ctrl+alt+0",
+        "mac": "cmd+alt+0",
+        "when": "editorTextFocus"
       }
     ]
   },
