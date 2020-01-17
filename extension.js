@@ -11,7 +11,8 @@ let anchors = {
   stamp9: {},
   stamp0: {}
 };
-let seq = 0;
+// let seq = 0;
+// let myStatusBarItem;
 function encodeLocation(uri, pos) {
   /* console.log(JSON.stringify([vscode.Uri.file(uri).toString(), pos.line, pos.character]))
   const query = JSON.stringify([vscode.Uri.file(uri).toString(), pos.line, pos.character]);
@@ -20,21 +21,25 @@ function encodeLocation(uri, pos) {
   // return vscode.Uri.parse(uri);
 }
 function activate(context) {
+  /* myStatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
+  myStatusBarItem.command = "gotoAnchor.stamp1";
+  context.subscriptions.push(myStatusBarItem); */
   function setStamp(index) {
     var editor = vscode.window.activeTextEditor;
     if (!editor) {
-      vscode.window.showInformationMessage("Hello World!");
+      vscode.window.showInformationMessage("Please choose a file and focus it!");
     } else {
       anchors["stamp" + index].line = editor.selection.active.line;
       anchors["stamp" + index].character = editor.selection.active.character;
       anchors["stamp" + index].docName = editor.document.fileName;
     }
-    vscode.window.showInformationMessage("Hello World!" + index);
+    // vscode.window.showInformationMessage("mark " + index);
+    /* myStatusBarItem.text = `marked ${index}`;
+    myStatusBarItem.show(); */
   }
   function go(index) {
     if (anchors["stamp" + index].docName) {
       const uri = encodeLocation(anchors["stamp" + index].docName, anchors["stamp" + index]);
-      console.log(uri);
       vscode.workspace.openTextDocument(uri).then(doc =>
         vscode.window.showTextDocument(doc, {
           selection: new vscode.Range(new vscode.Position(anchors["stamp" + index].line, anchors["stamp" + index].character), new vscode.Position(anchors["stamp" + index].line, anchors["stamp" + index].character)),
@@ -42,7 +47,7 @@ function activate(context) {
         })
       );
     }
-    vscode.window.showInformationMessage("Hello World!aaa" + index);
+    // vscode.window.showInformationMessage("Hello World!aaa" + index);
   }
   for (let i = 0; i < 10; i++) {
     let disposable = vscode.commands.registerCommand("gotoAnchor.stamp" + i, function() {
